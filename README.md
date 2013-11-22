@@ -37,4 +37,4 @@ Ie. Select a class that begins with "button" and contains the word "blue":
 ![Begins with and Contains Attribute Selector](http://cl.ly/image/2t2G2O1z3b0N/Screen%20Shot%202013-11-22%20at%202.22.57%20PM.png)
 
 ## Conclusion
-When targeting 600 different elements, the difference in
+The difference in page rendering time were all within 40 milliseconds of eachother. There's no noticable difference even with 600 elements on a page being targeted via the three methods listed above.
