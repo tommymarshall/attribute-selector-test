@@ -25,14 +25,14 @@
 		}
 
 		a {
-			display: block;
-			padding: 0.5em 1em;
 			background: #444;
+			color: #fff;
+			display: block;
 			font-size: 18px;
 			margin: 4px 0;
-			color: #fff;
-			text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+			padding: 0.5em 1em;
 			text-decoration: none;
+			text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
 		}
 
 		a:hover {
