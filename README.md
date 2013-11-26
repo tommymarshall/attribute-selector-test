@@ -3,7 +3,7 @@ Attribute selectors have a bad rap for being notoriously slow. But just how are 
 
 ## Examples of Selectors
 
-### Selecting Single Class Names
+### Selecting via Single Class Names
 Ie. Target an element with a class that contains "button--blue":
 
     .button--blue {
@@ -15,7 +15,7 @@ Ie. Target an element with a class that contains "button--blue":
 
 ![Selecting Single Class Names](http://cl.ly/image/3h3a1S2w3N43/Screen%20Shot%202013-11-26%20at%2011.57.01%20AM.png)
 
-### Selecting Multiple Class Names
+### Selecting via Multiple Class Names
 Ie. Target an element with a class that contains "button" and "button--blue":
 
     .button {
@@ -30,7 +30,7 @@ Ie. Target an element with a class that contains "button" and "button--blue":
 
 ![Selecting Multiple Class Names](http://cl.ly/image/191o3Q0X0G2w/Screen%20Shot%202013-11-26%20at%2011.57.05%20AM.png)
 
-### Begins With and Contains Attribute Selector
+### Selecting via Begins With and Contains Attribute Selectors
 Ie. Target an element with a class that begins with "button" and contains the word "blue":
 
     [class^="button"][class*="blue"] {
