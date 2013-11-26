@@ -4,17 +4,19 @@ Attribute selectors have a bad rap for being notoriously slow. But just how are 
 ## Examples of Selectors
 
 ### Selecting Single Class Names
-Ie. Select a class that contains "button--blue":
+Ie. Target an element with a class that contains "button--blue":
 
     .button--blue {
         padding: 1em 2em;
         background: blue;
     }
 
-![Selecting Single Class Names](http://cl.ly/image/3K3r1S1O1u0q/Screen%20Shot%202013-11-22%20at%202.22.44%20PM.png)
+    <button class="button--blue">I'm a Button</button>
+
+![Selecting Single Class Names](http://cl.ly/image/3h3a1S2w3N43/Screen%20Shot%202013-11-26%20at%2011.57.01%20AM.png)
 
 ### Selecting Multiple Class Names
-Ie. Select a class that contains "button" and "button--blue":
+Ie. Target an element with a class that contains "button" and "button--blue":
 
     .button {
         padding: 1em 2em;
@@ -24,17 +26,21 @@ Ie. Select a class that contains "button" and "button--blue":
         background: blue;
     }
 
-![Selecting Multiple Class Names](http://cl.ly/image/2f3D2F3h2p0P/Screen%20Shot%202013-11-22%20at%202.22.33%20PM.png)
+    <button class="button button--blue">I'm a Button</button>
 
-### Begins with and Contains Attribute Selector
-Ie. Select a class that begins with "button" and contains the word "blue":
+![Selecting Multiple Class Names](http://cl.ly/image/191o3Q0X0G2w/Screen%20Shot%202013-11-26%20at%2011.57.05%20AM.png)
+
+### Begins With and Contains Attribute Selector
+Ie. Target an element with a class that begins with "button" and contains the word "blue":
 
     [class^="button"][class*="blue"] {
         background: blue;
         padding: 1em 2em;
     }
 
-![Begins with and Contains Attribute Selector](http://cl.ly/image/2t2G2O1z3b0N/Screen%20Shot%202013-11-22%20at%202.22.57%20PM.png)
+    <button class="button--blue">I'm a Button</button>
+
+![Begins with and Contains Attribute Selector](http://cl.ly/image/0y0a0I15063c/Screen%20Shot%202013-11-26%20at%2011.57.11%20AM.png)
 
 ## Conclusion
-The difference in page rendering time were all within 40 milliseconds of eachother. There's no noticable difference even with 600 elements on a page being targeted via the three methods listed above.
+With 600 elements on a page being targeted in the DOM, targeting an element specifying a single class and with multiple classes were the most performant, while targeting elements via chained attribute selectors was about 40 milliseconds slower.
